@@ -39,7 +39,7 @@ function topmenu() {
 	const windowHeight = $(window).height();
 	const scrollTop = $(window).scrollTop();
 
-	if (scrollTop > windowHeight - 70) {
+	if (scrollTop < windowHeight - 70) {
 		$('html').addClass('topmenu_active');
 	} else {
 		$('html').removeClass('topmenu_active');
