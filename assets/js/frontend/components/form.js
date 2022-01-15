@@ -3,12 +3,6 @@ import React from 'react';
 class Form extends React.Component {
 	constructor(props) {
 		super(props);
-
-		this.updateField = this.updateField.bind(this);
-		this.submit = this.submit.bind(this);
-	}
-
-	componentWillMount() {
 		this.state = {
 			name: '',
 			email: '',
@@ -16,6 +10,12 @@ class Form extends React.Component {
 			submitted: false,
 			sendTo: this.props.sendTo,
 		};
+
+		this.updateField = this.updateField.bind(this);
+		this.submit = this.submit.bind(this);
+	}
+
+	componentWillMount() {
 	}
 
 	submit() {
