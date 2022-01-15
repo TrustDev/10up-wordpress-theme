@@ -50,5 +50,7 @@ function topmenu() {
 function windowScroll() {
 	topmenu();
 }
-
+function setupGTM() {
+	
+}
 setupGTM();
