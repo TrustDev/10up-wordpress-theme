@@ -43,7 +43,7 @@ const hideBanner = (banner) => {
  */
 const showBanner = (banner) => {
 	banner.removeClass('js-is-hidden');
-	sessionStorage.getItem('gdpr_banner');
+	sessionStorage.removeItem('gdpr_banner');
 };
 
 export default init;
