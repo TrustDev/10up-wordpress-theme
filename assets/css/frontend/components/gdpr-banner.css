@@ -1,0 +1,46 @@
+.gdpr-banner {
+	background: var(--c-white);
+	bottom: 0;
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(104, 44, 46, 0.15), 0 10px 16px rgba(0, 0, 0, 0.03);
+	left: 0;
+	padding: 1rem 0;
+	position: fixed;
+	width: 100vw;
+	z-index: 5;
+
+	&.js-is-hidden {
+		display: none;
+	}
+
+	& .grid-container {
+		justify-content: center;
+	}
+
+	@media (--bp-medium) {
+
+		& .grid-container {
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.gdpr-banner__content {
+
+	& p {
+		font-size: var(--font-size-14);
+	}
+
+}
+
+.gdpr-banner__heading {
+	font-size: var(--font-size-heading5);
+}
+
+.gdpr-banner__actions {
+	font-size: var(--font-size-14);
+}
+
+.dismiss-gdpr {
+	margin: 0;
+}

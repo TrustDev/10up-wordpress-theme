@@ -1,0 +1,19 @@
+.c-testimonial-block {
+	display: block;
+
+	& .c-blockquote {
+		margin-top: 90px;
+	}
+}
+
+.c-testimonial-block__cta {
+	margin-bottom: 70px;
+
+	@media (--bp-medium) {
+		margin-bottom: 0;
+	}
+}
+
+.c-testimonial-block__cta .button-secondary {
+	cursor: default;
+}

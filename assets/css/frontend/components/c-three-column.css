@@ -1,0 +1,52 @@
+.c-three-column {
+	display: block;
+	margin-bottom: 82px;
+
+	@media (--bp-medium) {
+		margin-bottom: 150px;
+	}
+
+	& .column {
+		padding: 0;
+
+		@media (--bp-medium) {
+			padding: 0 24px;
+		}
+
+		@media (--bp-large) {
+			padding: 0 30px;
+		}
+
+		@media (--bp-xlarge) {
+			padding: 0 40px;
+		}
+	}
+
+	& .c-three-column__text {
+		font-size: var(--font-size-18);
+		line-height: 1.38;
+	}
+}
+
+.c-three-column.c-three-column--numbered {
+
+	& .column {
+		padding: 24px 20px 24px 34px;
+
+		@media (--bp-medium) {
+			padding: 0 20px 0 34px;
+		}
+	}
+
+	& .column:nth-child(1) {
+		background: url("../../assets/images/watermark-1.jpg") no-repeat 0 0;
+	}
+
+	& .column:nth-child(2) {
+		background: url("../../assets/images/watermark-2.jpg") no-repeat 0 0;
+	}
+
+	& .column:nth-child(3) {
+		background: url("../../assets/images/watermark-3.jpg") no-repeat 0 0;
+	}
+}

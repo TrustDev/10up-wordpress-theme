@@ -1,0 +1,86 @@
+.illustration--demo {
+	height: 310px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 491px;
+	z-index: -1;
+
+	@media (--bp-medium) {
+		height: 413px;
+		top: -90px;
+		width: 654px;
+	}
+
+	@media (--bp-xmedium) {
+		height: 413px;
+		right: -40px;
+		top: -60px;
+		width: 654px;
+	}
+
+	@media (--bp-large) {
+		height: 620px;
+		right: 0;
+		top: -50px;
+		width: 982px;
+	}
+}
+
+@keyframes demo-wheels {
+
+	0% {
+		transform: rotate(0deg);
+	}
+
+	5% {
+		transform: rotate(-7deg);
+	}
+
+	10% {
+		transform: rotate(0deg);
+	}
+
+	15% {
+		transform: rotate(0deg);
+	}
+
+	45% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-4px);
+	}
+
+	55% {
+		transform: translateY(0);
+	}
+
+	80% {
+		transform: rotate(0deg);
+	}
+
+	85% {
+		transform: rotate(7deg);
+	}
+
+	90% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.demo--rear,
+.demo--front {
+	animation: 10s linear 3s infinite demo-wheels;
+	transform-box: fill-box;
+	transform-origin: center;
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+	}
+}

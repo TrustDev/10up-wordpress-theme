@@ -1,0 +1,53 @@
+@keyframes hover-pivot {
+
+
+	0% {
+
+		filter: drop-shadow(1px 5px 3px #ccc);
+		transform: rotate(1deg);
+	}
+
+	50% {
+
+		filter: drop-shadow(1px 15px 12px #ccc);
+		transform: rotate(-1deg) translateY(-5px) perspective(50em);
+	}
+
+	100% {
+
+		filter: drop-shadow(1px 5px 3px #ccc);
+		transform: rotate(1deg);
+	}
+}
+
+.illustration--hover-board {
+	animation: hover-pivot 6s ease both infinite;
+	position: absolute;
+	right: 100px;
+	top: -275px;
+	transform-origin: center 25%;
+	width: 120px;
+
+	@media (--bp-small) {
+		width: 175px;
+	}
+
+	@media (--bp-medium) {
+		width: 200px;
+	}
+
+	@media (--bp-xmedium) {
+		right: 120px;
+		width: 220px;
+	}
+
+	@media (--bp-large) {
+		right: 160px;
+		top: -175px;
+		width: 260px;
+	}
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+	}
+}

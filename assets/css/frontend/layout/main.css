@@ -1,0 +1,7 @@
+.main {
+	display: block;
+
+	& .column {
+		z-index: 1;
+	}
+}

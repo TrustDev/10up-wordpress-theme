@@ -1,0 +1,46 @@
+.illustration--arcade {
+	display: block;
+	position: relative;
+}
+
+/* .illustration-space-ship {
+	background: url("../../assets/svg/illustrations/illustration-space-ship.svg") no-repeat;
+	display: none;
+	height: 58px;
+	left: 270px;
+	position: absolute;
+	top: 264px;
+	width: 71px;
+
+	@media (--bp-large) {
+		display: block;
+	}
+} */
+
+@keyframes pulse-logo {
+
+	25% {
+
+		fill: #75bebc;
+	}
+
+	50% {
+
+		fill: #9bd0dc;
+
+		/* opacity: 0.4; */
+	}
+
+	75% {
+
+		fill: #75bebc;
+	}
+}
+
+.illustration--arcade-logo {
+	animation: pulse-logo 4s both infinite;
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+	}
+}

@@ -1,0 +1,201 @@
+
+@keyframes electric-arc {
+
+	0% {
+
+		opacity: 0;
+	}
+
+	3% {
+
+		opacity: 0;
+	}
+
+	4% {
+
+		opacity: 1;
+	}
+
+	7% {
+
+		opacity: 0;
+	}
+
+	100% {
+
+		opacity: 0;
+	}
+
+}
+
+@keyframes electric-arc-2 {
+
+	0% {
+
+		opacity: 0;
+	}
+
+	6% {
+
+		opacity: 0;
+	}
+
+	8% {
+
+		opacity: 1;
+	}
+
+	12.5% {
+
+		opacity: 0;
+	}
+
+	100% {
+
+		opacity: 0;
+	}
+
+}
+
+@keyframes electric-sparks {
+
+	0% {
+
+		opacity: 0;
+	}
+
+	2% {
+
+		opacity: 0;
+	}
+
+	3.5% {
+
+		opacity: 1;
+	}
+
+	9.5% {
+
+		opacity: 0.5;
+	}
+
+	13% {
+
+		opacity: 0;
+	}
+
+	100% {
+
+		opacity: 0;
+	}
+
+}
+
+@keyframes electric-reflection {
+
+	0% {
+
+		fill: #2f7875;
+		opacity: 1;
+	}
+
+	4% {
+
+		fill: #2f7875;
+		opacity: 1;
+	}
+
+	7% {
+
+		/* fill: #00c9ff; */
+		fill: url("#lens-gradient");
+		opacity: 0.8;
+	}
+
+	8% {
+
+		/* fill: #00c9ff; */
+		fill: url("#lens-gradient");
+		opacity: 0.5;
+	}
+
+	9% {
+
+		/* fill: #00c9ff; */
+		fill: url("#lens-gradient");
+		opacity: 0.8;
+	}
+
+	11% {
+
+		/* fill: #00c9ff; */
+		fill: url("#lens-gradient");
+		opacity: 0.3;
+	}
+
+	12% {
+
+		fill: #2f7875;
+		opacity: 1;
+	}
+
+	100% {
+
+		fill: #2f7875;
+		opacity: 1;
+	}
+
+}
+
+.illustration--doc {
+
+	position: absolute;
+	right: 30px;
+	top: 80px;
+	width: 150px;
+
+	@media (--bp-medium) {
+		right: 50px;
+		width: 250px;
+	}
+
+	@media (--bp-xmedium) {
+		right: 50px;
+		width: 300px;
+	}
+
+	@media (--bp-large) {
+		top: 55px;
+		width: 360px;
+	}
+}
+
+.illustration--doc__lens {
+
+	animation: electric-reflection 5s linear both infinite;
+	animation-delay: 5s;
+}
+
+.illustration--doc__arc {
+	animation: electric-arc 5s linear both infinite;
+	animation-delay: 5s;
+	filter: drop-shadow(-1px 1px 2px #fff) drop-shadow(-1px 1px 2px #fff);
+}
+
+.illustration--doc__arc-2 {
+	animation: electric-arc-2 5s linear both infinite;
+	animation-delay: 5s;
+	filter: drop-shadow(-1px 1px 2px #fff) drop-shadow(-1px 1px 2px #fff);
+}
+
+.illustration--doc__sparks {
+	animation: electric-sparks 5s linear both infinite;
+	animation-delay: 5s;
+	filter: drop-shadow(-1px 1px 2px #fff) drop-shadow(-1px 1px 2px #fff);
+}
+
+
+/* .illustration--doc__lens {
+
+} */
+

@@ -1,0 +1,13 @@
+.c-post-block {
+	display: block;
+	margin-bottom: 74px;
+}
+
+.post-block__meta p {
+	color: var(--c-shark);
+	font-family: var(--font-paragraph);
+	font-size: var(--font-size-14);
+	font-weight: 300;
+	line-height: 1.57;
+	margin: 0 0 8px;
+}

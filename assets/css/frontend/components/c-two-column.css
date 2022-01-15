@@ -1,0 +1,20 @@
+.c-two-column {
+	display: block;
+	margin-bottom: 64px;
+
+	& .column:first-child {
+		padding-right: 0;
+
+		@media (--bp-medium) {
+			padding-right: 34px;
+		}
+	}
+
+	& .column:last-child {
+		padding-left: 0;
+
+		@media (--bp-medium) {
+			padding-left: 34px;
+		}
+	}
+}

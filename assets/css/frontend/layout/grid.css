@@ -1,0 +1,156 @@
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1440px;
+	padding-left: 34px;
+	padding-right: 34px;
+	z-index: 10;
+
+	@media (--bp-medium) {
+		flex-flow: row wrap;
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+}
+
+.grid-container--thin {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1140px;
+	padding-left: 34px;
+	padding-right: 34px;
+}
+
+.grid-container--xthin {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 760px;
+	padding-left: 34px;
+	padding-right: 34px;
+
+	@media (--bp-medium) {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+.grid-container--medium {
+	max-width: 900px;
+	padding-left: 34px;
+	padding-right: 34px;
+
+	@media (--bp-medium) {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+@media(max-width: 600px) {
+	.c-two-thirds__title {
+		margin-left: 16px;
+	}
+}
+
+.column {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.column.row.row {
+	display: block;
+	float: none;
+}
+
+.small-3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.small-4 {
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+}
+
+.small-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.small-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.medium-3 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+
+.medium-4 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+}
+
+.medium-5 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%;
+	}
+}
+
+.medium-6 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+.medium-7 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%;
+	}
+}
+
+.medium-8 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+}
+
+.medium-9 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+}
+
+.medium-12 {
+	display: block;
+
+	@media (--bp-medium) {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

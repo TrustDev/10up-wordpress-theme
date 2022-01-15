@@ -1,0 +1,81 @@
+:root {
+
+	--c-blue-primary: #004891;
+	--c-alizarin-crimson: #e31e41;
+	--c-cardinal: #b1172a;
+	--c-bermuda: #7ed5d4;
+	--c-iceberg: #d1f2f0;
+	--c-aqua-haze: #f7f9fa;
+	--c-nevada: #676e6f;
+	--c-shark: #2a2d31;
+	--c-blue-chill: #098b87;
+	--c-cloud-burst: #243956;
+	--c-gallery: #efefef;
+	--c-breaker-bay: #5ba9a7;
+	--c-smalt-blue: #4c908e;
+
+	--c-white: #fff;
+	--c-off-white: #f1f1f1;
+	--c-black: #000;
+
+	--font-heading: "Avant Garde Medium", sans-serif;
+	--font-paragraph: "Rubik", sans-serif;
+
+	/* General font sizes */
+	--font-size-48: 3rem;       /* 48px */
+	--font-size-42: 2.625rem;   /* 42px */
+	--font-size-36: 2.25rem;    /* 36px */
+	--font-size-30: 1.875rem;   /* 30px */
+	--font-size-28: 1.75rem;    /* 28px */
+	--font-size-24: 1.5rem;     /* 24px */
+	--font-size-20: 1.25rem;    /* 20px */
+	--font-size-18: 1.125rem;   /* 18px */
+	--font-size-16: 1rem;       /* 16px */
+	--font-size-14: 0.875rem;   /* 14px */
+	--font-size-12: 0.75rem;   /* 12px */
+
+	--font-weight-bold: 700;
+	--font-weight-semibold: 600;
+	--font-weight-normal: 400;
+	--font-weight-light: 300;
+
+	--font-size-paragraph: 1rem;          /* 16px */
+
+	--font-size-page-title: var(--font-size-48);
+
+	/* Specific Heading font sizes */
+	--font-heading1: var(--font-size-42);
+	--font-heading2: var(--font-size-36);
+	--font-heading3: var(--font-size-30);
+	--font-heading4: var(--font-size-24);
+	--font-heading5: var(--font-size-20);
+	--font-heading6: var(--font-size-16);
+
+	/* Links */
+	--link-color: var(--c-alizarin-crimson);
+
+	/* Buttons */
+	--button-red: var(--c-alizarin-crimson);
+	--skip-focus-text: var(--c-black);
+
+	/* Status variables */
+	--c-alert-error: #feddca;
+	--c-alert-error-text: #e71e1e;
+	--c-alert-warning: #fdf69d;
+	--c-alert-warning-text: #707004;
+	--c-alert-success: #dff5b1;
+	--c-alert-success-text: #4e9511;
+	--c-disabled: var(--c-aqua-haze);
+
+	/* misc */
+	--border-radius-default: 2px;
+
+	/* Breakpoints */
+	@custom-media --bp-tiny ( min-width: 25em );        /* 400px */
+	@custom-media --bp-small ( min-width: 40.625em );   /* 650px */
+	@custom-media --bp-medium ( min-width: 53.125em );  /* 850px */
+	@custom-media --bp-xmedium ( min-width: 56.25em ); /* 900px */
+	@custom-media --bp-large ( min-width: 68.75em );    /* 1100px */
+	@custom-media --bp-xlarge ( min-width: 81.25em );   /* 1300px */
+
+}

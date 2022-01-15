@@ -1,0 +1,24 @@
+.c-logo-list {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	padding: 0;
+
+	@media (--bp-medium) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.c-logo-list__item {
+	display: flex;
+	list-style: none;
+	margin: 24px 0;
+	padding: 0;
+
+	& img {
+		max-width: 155px;
+		opacity: 0.6;
+		width: 100%;
+	}
+}

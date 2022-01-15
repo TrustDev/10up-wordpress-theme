@@ -1,0 +1,56 @@
+@keyframes alamanac-entrance {
+
+	0% {
+		opacity: 0;
+		transform: scale(0.1) rotate(-1450deg) translateY(40px);
+	}
+
+	50% {
+		opacity: 0.2;
+		transform: scale(0.1) rotate(-1450deg) translateY(40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+.illustration--almanac {
+	position: absolute;
+	right: 30px;
+	top: 0;
+	width: 150px;
+
+	@media (--bp-small) {
+		top: 25px;
+	}
+
+	@media (--bp-medium) {
+		right: 50px;
+		top: 75px;
+		width: 250px;
+	}
+
+	@media (--bp-xmedium) {
+		right: 50px;
+		top: 75px;
+		width: 300px;
+	}
+
+	@media (--bp-large) {
+		right: 195px;
+		top: 55px;
+		width: 400px;
+	}
+}
+
+.illustration--almanac__book {
+	animation: alamanac-entrance 2s ease-out;
+	transform-origin: 40% center;
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+		opacity: 0;
+	}
+}

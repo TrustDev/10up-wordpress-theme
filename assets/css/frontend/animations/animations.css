@@ -1,0 +1,156 @@
+@keyframes hover {
+
+	25% {
+
+		transform: translate3d(-3px, -5px, 0);
+	}
+
+	75% {
+
+		transform: translate3d(3px, 5px, 0);
+	}
+
+}
+
+@keyframes car-moon-hover {
+
+	25% {
+		transform: translate3d(-5px, -3px, 0) rotate(-4deg);
+	}
+
+	75% {
+		transform: translate3d(5px, 3px, 0) rotate(2deg);
+	}
+}
+
+@keyframes car-moon {
+
+	from {
+
+		opacity: 0;
+		transform: translate3d(120%, 200px, 0);
+	}
+
+	to {
+
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+}
+
+@keyframes engine-flash {
+
+	0% {
+
+		fill: #fff;
+	}
+
+	2% {
+
+		fill: var(--c-alizarin-crimson);
+	}
+
+	4% {
+
+		fill: #fff;
+	}
+
+	5% {
+
+		fill: #fff;
+	}
+
+	7% {
+		fill: var(--c-alizarin-crimson);
+		opacity: 0.75;
+	}
+
+	18% {
+
+		fill: #fff;
+	}
+
+}
+
+
+.animate-hover {
+	animation: hover linear 5s both infinite;
+}
+
+.car-moon--animate-in {
+
+	/* easeOutCirc */
+	animation: car-moon 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.car-moon--flash {
+
+	/*easeInOutQuart */
+	animation: engine-flash 7s ease-out infinite;
+	animation-delay: 5s;
+}
+
+.car-moon--car {
+	animation: car-moon-hover 6s linear both infinite;
+	animation-delay: 2s;
+	transform-origin: center;
+
+}
+
+.illustration--arcade-wp {
+	opacity: 0;
+	transform: translate3d(120px, 180px, 0) scale(0.3) skew(6deg, 18deg);
+	transition: opacity 0.7s ease;
+}
+
+.illustration--arcade:hover .illustration--arcade-wp {
+
+	opacity: 1;
+}
+
+
+.animate-hover,
+.car-moon--car,
+.car-moon--flash,
+.car-moon--animate-in,
+.illustration--arcade-logo,
+.illustration--doc__arc {
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+	}
+}
+
+@keyframes curve {
+
+	from {
+		transform: skew(-4deg);
+	}
+
+	to {
+		transform: skew(4deg);
+	}
+}
+
+.curve {
+	height: 280px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 300px;
+
+	@media (--bp-medium) {
+		height: auto;
+		width: 600px;
+	}
+}
+
+.curve path:first-child {
+	animation: curve 8s linear both infinite;
+	animation-direction: alternate;
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+	}
+}

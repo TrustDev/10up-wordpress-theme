@@ -1,0 +1,13 @@
+
+@media (max-width: 700px) {
+	.c-form-block {
+		margin-top: 120px;
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 700px) {
+	.c-form-block .form-container {
+		padding-left: 20px;
+	}
+}

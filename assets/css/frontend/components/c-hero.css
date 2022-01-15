@@ -1,0 +1,88 @@
+.c-hero {
+	background-position-x: right;
+	background-repeat: no-repeat;
+	background-size: 525px;
+	display: block;
+	margin-bottom: 30px;
+	min-height: 450px;
+	position: relative;
+	z-index: 2 !important;
+
+	@media (--bp-medium) {
+		margin-bottom: 80px;
+	}
+
+	& .container {
+		position: relative;
+	}
+}
+
+.page-template-page-plans-pricing .c-hero {
+	background-size: 300px;
+
+	@media (--bp-medium) {
+		background-size: 350px;
+	}
+
+	@media (--bp-xmedium) {
+		background-size: 550px;
+	}
+}
+
+.page-template-page-getting-started .c-hero,
+.page-template-page-features .c-hero {
+	background-size: 400px;
+
+	@media (--bp-small) {
+		background-size: 450px;
+	}
+
+	@media (--bp-medium) {
+		background-size: 500px;
+	}
+
+	@media (--bp-xmedium) {
+		background-size: 600px;
+	}
+
+	@media (--bp-large) {
+		background-size: 700px;
+	}
+}
+
+.c-hero__inner {
+	max-width: 536px;
+	padding-left: 0;
+	padding-top: 250px;
+	width: 100%;
+
+	/* @media (--bp-small) {
+		padding-top: 464px;
+	} */
+
+	@media (--bp-medium) {
+		padding-top: 180px;
+	}
+}
+
+.main--home .c-hero__inner {
+	padding-top: 450px;
+
+	@media (--bp-medium) {
+		padding-top: 180px;
+	}
+}
+
+.c-hero__content {
+	margin-bottom: 34px;
+
+	& p {
+		font-size: var(--font-size-18);
+	}
+}
+
+.c-hero__background {
+	position: absolute;
+	right: 0;
+	top: 0;
+}

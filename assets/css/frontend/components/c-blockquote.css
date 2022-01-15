@@ -1,0 +1,38 @@
+.c-blockquote {
+	background: url("../../assets/svg/quote.svg") no-repeat;
+	border: 0;
+	margin: 0 0 20px 0;
+	padding: 20px;
+
+	@media (max-width: 650px) {
+		height: 113px;
+	}
+
+	& p {
+		margin-bottom: 28px;
+		margin-top: 0;
+	}
+
+	& cite {
+		font-style: normal;
+	}
+
+	& .c-blockquote__name {
+		color: var(--c-black);
+		display: block;
+		font-family: var(--font-paragraph);
+		font-size: var(--font-size-18);
+		font-weight: 700;
+		text-align: right;
+	}
+
+	& .c-blockquote__company,
+	& .c-blockquote__title {
+		color: var(--c-blue-chill);
+		display: block;
+		font-size: var(--font-size-16);
+		font-weight: 700;
+		text-align: right;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,28 @@
+.faqs-container {
+	display: flex;
+
+	& .faqs__left {
+		flex-shrink: 0;
+		width: 40%;
+	}
+
+	& .faqs-right__faq--item span {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	& .faqs-right__faq--item {
+		margin-bottom: 45px;
+
+		& a {
+			display: block;
+			margin-bottom: 15px;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+
+}

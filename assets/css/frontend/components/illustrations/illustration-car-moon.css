@@ -1,0 +1,39 @@
+.illustration--car-moon {
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: -1;
+
+	@media (--bp-medium) {
+		right: 8px;
+		top: 8px;
+	}
+}
+
+.illustration--car-moon-desktop {
+	display: none;
+
+	@media (--bp-medium) {
+		display: block;
+		height: auto;
+		width: 600px;
+	}
+
+	@media (--bp-xmedium) {
+		width: 700px;
+	}
+
+	@media (--bp-large) {
+		display: block;
+		width: 1020px;
+	}
+}
+
+.illustration--car-moon-mobile {
+	position: relative;
+	z-index: -1;
+
+	@media (--bp-medium) {
+		display: none;
+	}
+}

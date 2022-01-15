@@ -1,0 +1,103 @@
+.button-primary {
+	align-items: center;
+	background: var(--c-alizarin-crimson);
+	border: 2px solid var(--c-alizarin-crimson);
+	border-radius: 200px;
+	color: var(--c-white);
+	cursor: pointer;
+	display: inline-flex;
+	font-family: var(--font-paragraph);
+	font-size: var(--font-size-16);
+	font-weight: 700;
+	justify-content: center;
+	line-height: 1.56;
+	margin: 20px 0;
+	padding: 8px 32px;
+	text-align: center;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		background: var(--c-white);
+		color: var(--c-alizarin-crimson);
+		outline: 0;
+		text-decoration: none;
+	}
+
+	& .icon {
+		fill: var(--c-white);
+		margin-left: 6px;
+		transition: margin-left 100ms;
+	}
+
+	&:hover .icon,
+	&:focus .icon {
+		fill: var(--c-alizarin-crimson);
+		margin-left: 10px;
+	}
+
+	&.button-primary--teal {
+		background: var(--c-breaker-bay);
+		border: 2px solid var(--c-breaker-bay);
+
+		&:focus,
+		&:hover {
+			background: var(--c-smalt-blue);
+			border: 2px solid var(--c-smalt-blue);
+			color: var(--c-white);
+		}
+	}
+}
+
+.button-secondary {
+	background: transparent;
+	border-bottom: 4px solid var(--c-alizarin-crimson);
+	border-left: 0;
+	border-radius: 0;
+	border-right: 0;
+	border-top: 0;
+	color: var(--c-alizarin-crimson);
+	font-size: var(--font-size-20);
+	font-weight: 700;
+	height: auto;
+	padding: 4px 0;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		border-bottom: 4px solid var(--c-cardinal);
+		color: var(--c-cardinal);
+		text-decoration: none;
+	}
+
+	& .icon {
+		fill: var(--c-alizarin-crimson);
+		margin-left: 6px;
+		transition: margin-left 100ms;
+	}
+
+	&:hover .icon,
+	&:focus .icon {
+		fill: var(--c-cardinal);
+		margin-left: 10px;
+	}
+}
+
+.button-small {
+	align-items: center;
+	background: var(--c-alizarin-crimson);
+	border: 2px solid var(--c-alizarin-crimson);
+	border-radius: 200px;
+	color: var(--c-white);
+	cursor: pointer;
+	display: inline-flex;
+	font-family: var(--font-paragraph);
+	font-size: var(--font-size-12);
+	font-weight: 700;
+	justify-content: center;
+	line-height: 1.56;
+	margin: 20px 0;
+	padding: 5px 15px;
+	text-align: center;
+	white-space: nowrap;
+}
