@@ -27,7 +27,7 @@ var $ = jQuery;
 $(window).bind('load', function () {
 	$(document).on('click', '#js-nav-primary__toggle', function () {
 		console.log('click');
-		$('html').addClass('topmenu_mobile__active');
+		$('html').toggleClass('topmenu_mobile__active');
 	});
 
 	$(window).scroll(windowScroll);
